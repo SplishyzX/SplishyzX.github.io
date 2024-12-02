@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Математическая игра</title>
+  <script src="osnova.js"></script>
+  <link rel="stylesheet" href="Style.css">
+  <style>
+  body {
+    font-family: sans-serif;
+  }
+  #gameContainer {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  </style>
+  </head>
+  <body>
+    <h1>Математическая игра</h1>
+    <p>Введите кол-во жизней:</p>
+    <input type="number" id="livesInput" min="1" value="3">
+    <button onclick="startGame()">Начать игру</button>
+    <div id="gameContainer" style="display: none;">
+      <p id="question"></p>
+      <input type="number" id="answerInput">
+      <button id="checkButton" onclick="checkAnswer()">Проверить</button>
+      <p id="result"></p>
+      <p id="lives"></p>
+      <p id="timer">30</p>
+    <p id="score">Счёт: 0</p> </div>
+      </body>
+  </html>
+
+
+
+
+
+
+
+
+
